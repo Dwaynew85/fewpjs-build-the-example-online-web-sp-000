@@ -10,6 +10,12 @@ let likes = document.querySelectorAll('.like')
 for(const like of likes) {
     like.addEventListener('click', function(e) {
       mimicServerCall()
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch((error) => {
+        setError(error);
+      });
     });
   }
 
