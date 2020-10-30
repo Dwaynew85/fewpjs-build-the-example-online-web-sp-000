@@ -11,7 +11,8 @@ for(const like of likes) {
     like.addEventListener('click', function(e) {
       mimicServerCall()
       .then(function(response) {
-        setHeart(e)
+        let likeSpan = e.path[0].firstElementChild.innerHTML
+        console.log(likeSpan)
       })
       .catch((error) => {
         setError(error);
@@ -35,7 +36,7 @@ function modalShow() {
   modal.removeAttribute('class')
 }
 function setHeart(e) {
-  if (e.path[0].firstElementChild.innerHTML === EMPTY_HEART ) {
+  if ( === EMPTY_HEART ) {
     console.log('empty heart');
   }else {
     console.log('full heart');
