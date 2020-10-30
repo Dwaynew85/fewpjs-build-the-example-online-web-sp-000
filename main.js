@@ -16,10 +16,10 @@ for(const like of likes) {
 }
 
 function setError(error){
-  modal.hidden = false
+  modalShow()
   modal.firstElementChild.innerHTML = error
   setTimeout(function() {
-    modalShow()
+    modalHide()
   }, 5000);
 }
 
