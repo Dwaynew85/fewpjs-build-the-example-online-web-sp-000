@@ -12,9 +12,9 @@ for(const like of likes) {
       mimicServerCall()
       .catch(error) {
         setError(error);
-        });
+      };
     });
-}
+  }
 
 function setError(error){
   modalShow()
