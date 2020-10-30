@@ -36,7 +36,7 @@ function modalShow() {
   modal.removeAttribute('class')
 }
 function setHeart(e) {
-  if ( === EMPTY_HEART ) {
+  if ( EMPTY_HEART ) {
     console.log('empty heart');
   }else {
     console.log('full heart');
