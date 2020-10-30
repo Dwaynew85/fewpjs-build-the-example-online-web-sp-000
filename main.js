@@ -13,12 +13,15 @@ for(const like of likes) {
           mimicServerCall()
         }
         catch(err) {
-          console.log(err)
+          setError(err)
         }
     });
 }
 
-
+function setError(err){
+  modal.hidden = true
+  modal.firstElementChild.innerHTML = err
+}
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
