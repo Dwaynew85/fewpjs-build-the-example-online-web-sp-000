@@ -11,7 +11,7 @@ for(const like of likes) {
     like.addEventListener('click', function(e) {
       mimicServerCall()
       .then(function(response) {
-        likeSpan = e.path[0].firstElementChild.innerHTML
+        likeSpan = e.path[0].firstElementChild
         setHeart(likeSpan)
       })
       .catch((error) => {
