@@ -23,6 +23,14 @@ function setError(error){
   }, 5000);
 }
 
+function modalHide() {
+  modal.setAttribute('class', 'hidden')
+}
+
+function modalShow() {
+  modal.removeAttribute('class')
+}
+
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
 //------------------------------------------------------------------------------
