@@ -4,7 +4,7 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 let modal = document.getElementById('modal')
-// modal.setAttribute('class', 'hidden')
+modal.hidden = true
 
 let likes = document.querySelectorAll('.like')
 for(const like of likes) {
