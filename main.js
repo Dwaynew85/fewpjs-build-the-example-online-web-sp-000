@@ -11,7 +11,7 @@ for(const like of likes) {
     like.addEventListener('click', function(e) {
       mimicServerCall()
       .then(function(response) {
-        console.log(response);
+        console.log('this is what I wanted');
       })
       .catch((error) => {
         setError(error);
