@@ -14,7 +14,7 @@ for(const like of likes) {
           setError(error)
         } else if (!error) {
           console.log(e)
-        } 
+        }
       });
     });
 }
