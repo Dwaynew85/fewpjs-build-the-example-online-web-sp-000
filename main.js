@@ -13,9 +13,9 @@ for(const like of likes) {
     });
 }
 
-function setError(){
+function setError(error){
   modal.hidden = true
-  modal.firstElementChild.innerHTML =
+  modal.firstElementChild.innerHTML = error
 }
 
 //------------------------------------------------------------------------------
