@@ -12,9 +12,10 @@ for(const like of likes) {
       mimicServerCall().catch((error) => {
         if (error) {
           setError(error);
-        } else
-        console.log('no error!');
-        });
+        } else {
+          console.log('no error!');
+        }
+      });
     });
 }
 
