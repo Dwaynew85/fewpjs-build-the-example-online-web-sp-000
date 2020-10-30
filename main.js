@@ -5,13 +5,13 @@ const FULL_HEART = '♥'
 // Your JavaScript code goes here!
 let modal = document.getElementById('modal')
 modalHide()
-
+let likeSpan;
 let likes = document.querySelectorAll('.like')
 for(const like of likes) {
     like.addEventListener('click', function(e) {
       mimicServerCall()
       .then(function(response) {
-        let likeSpan = e.path[0].firstElementChild.innerHTML
+        let likeSpan = e
         setHeart(likeSpan)
       })
       .catch((error) => {
