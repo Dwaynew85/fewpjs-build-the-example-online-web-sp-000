@@ -9,7 +9,8 @@ modalHide()
 let likes = document.querySelectorAll('.like')
 for(const like of likes) {
     like.addEventListener('click', function(e) {
-      mimicServerCall().catch((error) => {
+      mimicServerCall()
+      .catch((error) {
         setError(error);
         });
     });
