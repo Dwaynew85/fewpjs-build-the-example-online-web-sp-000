@@ -19,7 +19,7 @@ function setError(error){
   modal.hidden = false
   modal.firstElementChild.innerHTML = error
   setTimeout(function() {
-    modal.hidden = true
+    modalShow()
   }, 5000);
 }
 
