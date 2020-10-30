@@ -37,7 +37,7 @@ function modalShow() {
 }
 
 function setHeart(likeSpan) {
-  if ( EMPTY_HEART ) {
+  if ( likeSpan === EMPTY_HEART ) {
     console.log('empty heart');
   }else {
     console.log('full heart');
