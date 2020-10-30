@@ -21,7 +21,7 @@ for(const like of likes) {
 
 function setError(error){
   modal.hidden = false
-  modal.firstElementChild.innerHTML = error + "blah"
+  modal.firstElementChild.innerHTML = error
   setTimeout(function() {
     modal.hidden = true
   }, 5000);
