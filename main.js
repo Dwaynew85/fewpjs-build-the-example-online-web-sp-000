@@ -40,7 +40,7 @@ function setHeart(likeSpan) {
   if ( likeSpan === EMPTY_HEART ) {
     likeSpan = FULL_HEART;
   }else {
-    console.log('full heart');
+    likeSpan = EMPTY_HEART;
   }
 }
 
