@@ -13,7 +13,7 @@ for(const like of likes) {
         if (error) {
           setError(error);
         } else {
-          return console.log(e);
+          console.log(e);
         }
       });
     });
