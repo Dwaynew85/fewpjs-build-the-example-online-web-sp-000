@@ -3,7 +3,12 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-
+let likes = document.querySelectorAll('.like')
+for(const like of likes) {
+    like.addEventListener('click', function(e) {
+        console.log(e);
+    });
+}
 
 
 
