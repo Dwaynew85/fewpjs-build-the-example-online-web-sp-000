@@ -42,6 +42,7 @@ function setHeart(likeSpan) {
     likeSpan.setAttribute('class', 'activated-heart')
   }else {
     likeSpan.innerHTML = EMPTY_HEART;
+    likeSpan.removeAttribute('class')
   }
 }
 
