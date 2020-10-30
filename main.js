@@ -14,7 +14,7 @@ for(const like of likes) {
 }
 
 function setError(error){
-  modal.hidden = true
+  modal.hidden = false
   modal.firstElementChild.innerHTML = error
 }
 
