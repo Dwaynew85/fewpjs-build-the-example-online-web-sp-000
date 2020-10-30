@@ -39,6 +39,7 @@ function modalShow() {
 function setHeart(likeSpan) {
   if ( likeSpan.innerHTML === EMPTY_HEART ) {
     likeSpan.innerHTML = FULL_HEART;
+    likeSpan.setAttribute('class', 'activated-heart')
   }else {
     likeSpan.innerHTML = EMPTY_HEART;
   }
